@@ -126,24 +126,12 @@ body, html {height: 100%}
 
 
     <body>
-      <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
-
-      <div class="button w3-center">
-        <button class="btn" id="btn-test1">Skate Boarders</button>
-        <button class="btn" id="btn-test2">Tourist</button>
-        <button class="btn" id="btn-test3">Homeless People</button>
-        <button class="btn" id="btn-reset">Adolescence</button>
-        <button class="btn" id="btn-test3">Buskers</button>
-        <button class="btn" id="btn-reset">Family</button>
-        <button class="btn" id="btn-reset">Events</button>
-        <button class="btn" id="btn-reset">Chess</button>
-      </div>
-
       <svg version="1.1" class="map_svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
       	 viewBox="0 0 1920 1080" style="enable-background:new 0 0 1920 1080;" xml:space="preserve">
       <style type="text/css">
       	.st0{fill:#E6E4E0;}
       	.st1{fill:#B6E59E;}
+        .st1_after{fill:#A52A2A;}
       	.st2{fill:#DCD9D6;}
       	.st3{font-family:'MyriadPro-Regular';}
       	.st4{font-size:27.9735px;}
@@ -246,7 +234,7 @@ body, html {height: 100%}
       	<path class="st1 tooltip" title="events" d="M964,462l-23,214l8,10c0,0,159-99,178-115s112-96,112-96L964,462z"/>
       </g>
       <g id="skate">
-      	<path fill="#B6E59E" d="M569,387l-4,85c0,0-245-15-265-18s-35-5-37-4s-27.5-15.5-23.5-33.5s8-29,13-32s20-8,20-8l126,5l14-7L569,387z"
+      	<path class="st1 tooltip" title="skate" img= d="M569,387l-4,85c0,0-245-15-265-18s-35-5-37-4s-27.5-15.5-23.5-33.5s8-29,13-32s20-8,20-8l126,5l14-7L569,387z"
       		/>
       </g>
       <g id="family">
@@ -329,15 +317,7 @@ body, html {height: 100%}
       </svg>
 
       <script>
-      $('#btn-test1').on("click", function() {
-          $('#skate').css({ fill: "#ff0000" });
-      });
-      $('#btn-test2').on("click", function() {
-          $('#path2').css({ fill: "#00ff00" });
-      });
-      $('#btn-test3').on("click", function() {
-          $('#path3').css({ fill: "#0000ff" });
-      });
+
 
       </script>
     </body>
