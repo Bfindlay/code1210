@@ -1,5 +1,9 @@
 console.log('loaded');
 // STUDENT CLICK EVENT
+$( function() {
+    $( "#slider" ).slider();
+  } );
+
 
 $("#students").click(function() { 
     console.log('clicked');
@@ -90,6 +94,46 @@ $("#homeless").click(function() {
     console.log(a);
   });
 
+const slide = (e) => {
+    console.log(e);
+   let o = e/100;
+    if( e > 90){
+        $('#fountain').css({"opacity":  1});
+        
+    }if(e > 80){
+            $('#skate').css({"opacity":  1});
+             $('#family').css({"opacity":  1});
+    }if(e > 70){
+          $('#wedding').css({"opacity":  1});
+    }if(e > 60){
+          $('#buskers').css({"opacity":  1});
+    }if(e > 50){
+          $('#chess').css({"opacity":  1});
+    }if(e > 40){
+          $('#dancing').css({"opacity":  1});
+    }if(e > 30){
+          $('#tourist').css({"opacity":  1});
+    }if(e > 20){
+          $('#homeless').css({"opacity":  1});
+    }if(e > 10){
+          $('#students').css({"opacity":  1});
+    }if(e > 4){
+          $('.st1').css({"opacity":  1});
+    }if(e < 4){
+$('.st1').css({"opacity":  0});
+$('#fountain').css({"opacity":  0});
+$('#skate').css({"opacity":  0});
+$('#family').css({"opacity":  0});
+$('#wedding').css({"opacity":  0});
+$('#buskers').css({"opacity":  0});
+$('#chess').css({"opacity":  0});
+$('#dancing').css({"opacity":  0});
+$('#tourist').css({"opacity":  0});
+$('#homeless').css({"opacity":  0});
+$('#students').css({"opacity":  0});
 
 
-  
+    }
+    
+
+}
